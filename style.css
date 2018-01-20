@@ -1,0 +1,80 @@
+h6{
+	font-family: 'Orbitron', sans-serif;
+}
+body{
+	background-color: #7A7A7A;
+}
+.container{
+	margin-top: 200px;
+	width: 300px;
+	background-color: #DED7CF;
+	height: 400px;
+	border-radius: 15px;
+	padding: 10px auto;
+	box-shadow: 5px 5px 20px, inset 0 -5px 20px;
+	padding-top: 1em;
+}
+
+li{
+	list-style: none;
+	height: 36px;
+	margin: 0.5em;
+}
+ul{
+	padding-left: 0.9em;
+	margin: auto;
+}
+button{
+	color: #1B2631;
+	width: 52px;
+	height: 38px;
+	border-radius: 0.5em !important;
+	font-family: 'Orbitron', sans-serif;
+	box-shadow: 0px 4px 1px #2B2B2B;
+	outline: none !important;
+	transition: none !important;
+}
+.big{
+	width: 120px;
+}
+.length{
+	height: 90px;
+}
+.screen{
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 0.5em;
+	height: 64px;
+	width: 95%;
+	background-color: #C1C2AA;
+	border: 2px solid #A8A98A;
+	border-radius: 0.5em;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: 500;
+}
+button:hover{
+	cursor:pointer;
+
+}
+button:focus{
+	outline: none !important;
+	box-shadow: 0px 4px 1px #2B2B2B !important;
+}
+button:active{
+	outline: none !important;
+	margin-top: 3px;
+    box-shadow:none !important;
+}
+p{
+	margin-bottom: 2px;
+	margin-right: 10px;
+	color: #70715C;
+	font-weight: 8px;
+	position: relative;
+	overflow: hidden;
+}
+h4{
+	margin-right: 10px;
+	position: relative;
+	overflow: hidden;
+}
