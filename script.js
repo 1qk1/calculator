@@ -11,6 +11,7 @@ $(document).ready(function(){
 		// checks if the last character is a dot, if it is, it doesn't let the string to have more than 1 dot
 		var dotex = /\./;
 		if (dotex.test(str[str.length - 1]) && dotex.test(str[str.length - 2])){ str = str.substring(0, str.length - 1); }
+		if (dotex.test(str[0])){str = 0 + str;}
 		return str;
 	}
 	$(".num").on("click", function(){
