@@ -3,7 +3,6 @@ $(document).ready(function(){
 	var last = "";
 	var allowdot = 1;
 	var opex = /[+/*-]/;
-	var temp = "";
 	var lastop = ""
 	function operationCheck(str){
 		// checks if there are 2 operation symbols at the end of the string, if there are, it only returns the string with the last operation symbol
@@ -39,13 +38,12 @@ $(document).ready(function(){
 		lastop = $(this).data("value");
 		full = operationCheck(full);
 		$("#full").text(full);
-		temp = last;
 		last = "";
 		allowdot = 1;
 	});
 	$("#evl").on("click", function(){
-		if (typeof full == "number"){ full += lastop + temp; }
-		else {full += temp;}
+		if (typeof full == "number"){ full += lastop + last; }
+		else {full += last;}
 		if (opex.test(full[full.length - 1])){full = full.substring(0, full.length - 1);}
 		$("#full").text(full);
 		full = eval(full);
